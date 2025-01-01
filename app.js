@@ -20,44 +20,77 @@ forw.addEventListener("click", () => {
     
 });
 //sliderexplore worls wala
-/*
 document.addEventListener("DOMContentLoaded", () => {
-    const sets = document.querySelectorAll(".set");
-    const nextBtn = document.getElementById("next-btn");
-    const prevBtn = document.getElementById("prev-btn");
-    const itemsPerPage = 3;
-    let currentIndex = 0;
-  
-    // Function to display the current set of divs
-    function showCurrentSet() {
-      sets.forEach((set, index) => {
-        if (index >= currentIndex && index < currentIndex + itemsPerPage) {
-          set.classList.add("active");
-        } else {
-          set.classList.remove("active");
-        }
+  const cards = document.querySelectorAll(".card");
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+  let currentIndex = 0;
+
+  function updateCards() {
+      cards.forEach((card, index) => {
+          card.classList.remove("active", "next1", "prev");
+          if (index === currentIndex) {
+              card.classList.add("active");
+          } else if (index === (currentIndex + 1) % cards.length) {
+              card.classList.add("next1");
+          } else if (index === (currentIndex - 1 + cards.length) % cards.length) {
+              card.classList.add("prev");
+          }
       });
+  }
+
+  function showPreviousCard() {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateCards();
+  }
+
+  function showNextCard() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      updateCards();
+  }
+
+  // Initialize the slider
+  updateCards();
+
+  // Add event listeners for buttons
+  prevButton.addEventListener("click", showPreviousCard);
+  nextButton.addEventListener("click", showNextCard);
+});
+
+/*client wala slider*/
+document.addEventListener("DOMContentLoaded", () => {
+    const ones = document.querySelectorAll(".one");
+    const prevv = document.getElementById("clientpre");
+    const forward = document.getElementById("clientfor");
+    let currentIndex = 0; // Start index for visible cards
+    const visibleCount = 4; // Number of cards to show at a time
+
+    function updateCards() {
+        ones.forEach((one, index) => {
+            if (index >= currentIndex && index < currentIndex + visibleCount) {
+                one.classList.add("visible");
+            } else {
+                one.classList.remove("visible");
+            }
+        });
     }
+
+    function showPreviousSet() {
+        currentIndex = (currentIndex - visibleCount + ones.length) % ones.length;
+        updateCards();
+    }
+
+    function showNextSet() {
+        currentIndex = (currentIndex + visibleCount) % ones.length;
+        updateCards();
+    }
+
+    // Initialize the slider
+    updateCards();
+
+    // Add event listeners for buttons
+    prevv.addEventListener("click", showPreviousSet);
+    forward.addEventListener("click", showNextSet);
+});
+
   
-    // Next button functionality
-    nextBtn.addEventListener("click", () => {
-      currentIndex += itemsPerPage;
-      if (currentIndex >= sets.length) {
-        currentIndex = 0; // Reset to the start if we exceed the last set
-      }
-      showCurrentSet();
-    });
-  
-    // Previous button functionality
-    prevBtn.addEventListener("click", () => {
-      currentIndex -= itemsPerPage;
-      if (currentIndex < 0) {
-        currentIndex = Math.max(0, sets.length - itemsPerPage); // Go to the last set
-      }
-      showCurrentSet();
-    });
-  
-    // Initial display
-    showCurrentSet();
-  });
-  */

@@ -24,7 +24,7 @@
 }
 
 .banner {
-    height: 500px;
+    height: 90vh;
     width: 100%;
     background-image: url("/img7.jpg");
     background-size: cover;
@@ -36,16 +36,17 @@
 
 .item2 {
     font-size: 60px;
-    font-weight: bolder;
+    font-weight:bolder;
     color: bisque;
     position: relative;
     left: 480px;
     top: 180px;
+    text-shadow: black;
 }
 
 .next {
     position: relative;
-    top: 315px;
+    top:430px;
     left: 44%;
     margin-inline: 20px;
     height: 1.5rem;
@@ -56,7 +57,12 @@
     color: antiquewhite;
     border-radius: 50%;
 }
-
+.next:hover{
+    height: 2rem;
+    width: 3.5rem;
+    padding-top: 15px;
+    color: #0F6C73;
+}
 .banner1 {
     color: antiquewhite;
 }
@@ -75,94 +81,9 @@
         background-image: url("/img14.jpg");
     }
 }
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.pic-container {
-    height: 350px;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.pic-container i{
-    position: relative;
-    height: 1.5rem;
-    width: 3rem;
-    background-color: #80DFD1;
-    top:18px;
-    
-}
-.hero{
-    height: 200px;
-    width: 200px;
-}
-.one{
-background-image: url("/img8.jpg");
-background-size: cover;
-}
-.two{
-    background-image: url("/img9.jpg");
-    background-size: cover;
-    }
- .three{
-        background-image: url("/imga.jpg");
-        background-size: cover;
-        }
- .four{
-            background-image: url("/imga.jpg");
-            background-size: cover;
-            }
-.five{
-                background-image: url("/img9.jpg");
-                background-size: cover;
-                }
- .six{
-                    background-image: url("/imga.jpg");
-                    background-size: cover;
-                    }
-.seven{
- background-image: url("/img1.jpg");
- background-size: cover;
-}  
-.eight{
-    background-image: url("/img2.jpg");
-    background-size: cover;
- }  
- .nine{
-    background-image: url("/img3.jpg");
-    background-size: cover;}
-.dismis{
-    display: none;
-}    
-#set{
-    height:250px ;
-    width: 250px;
-    background-color: aquamarine;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.set {
-    display: none; /* Hide all by default */
-    height: 20rem;
-    width: 15rem;
-    margin: 2px;
-    border: 2px solid black;
-  }
-  .set div{
-    position: relative;
-    left:20px;
-  }
-  .set.active {
-    display: block; /* Show only active ones */
-  }
+
   .holiday{
-    height: 500px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,7 +138,7 @@ background-size: cover;
     flex-direction: row;
     justify-content: center;
     div{
-        animation: pop 2s ease-out forwards;
+        animation: pop 3s ease-out forwards;
 
     }
 
@@ -240,3 +161,300 @@ background-size: cover;
   50% { transform: translateY(-10%) scale(1.1); 
     opacity: 0.8; } 
     100% { transform: translateY(0) scale(1); opacity: 1; } }
+    /*yhn pe explore walay slider ka content dalna hai plz pichla mut urana vs code 
+    plz i beg you i am struggling from last 2 hours plz if you remove any of my content i will kill you*/
+    
+    .full {
+        align-items: center;
+        background-color: #f5f5f5;
+    box-sizing: border-box;
+    h1{
+        text-align: center;
+        padding-top: 30px;
+    }
+    }
+    
+    .slider-container {
+        height: 80vh;
+        text-align: center;
+        position: relative;
+        width: 100%;
+
+        
+    }
+    .slider{
+        
+        animation: pop 3s ease-out forwards;
+  
+    }
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        /*position: relative;*/
+    }
+    
+    .card {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+    }
+    
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .card.active {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        z-index: 3;
+    }
+    .card.card.active:hover{
+        height: 330px;
+        width: 230px;
+    }
+    .card.next1{
+        opacity: 0.8;
+        transform: translateX(150px) scale(0.9);
+        z-index: 2;
+    }
+    
+    .card.prev {
+        opacity: 0.8;
+        transform: translateX(-150px) scale(0.9);
+        z-index: 2;
+    }
+    
+    .controls {
+        margin-top: 20px;
+    }
+    .controls i{
+        color: #80DFD1;
+        font-size: 35px;
+        margin: 5px;
+    }
+    
+    
+    .controls i:hover {
+        font-size: 40px;
+        color: #0F6C73;
+    }
+    /*pehle footer kr leti hun baki kl karungi*/
+    .footer{
+        height: 250px;
+        background-color: #0F6C73;
+        display: flex;
+        justify-content: space-evenly;
+        text-align:justify;
+        padding-top: 60px;
+        
+    }
+    .footer pre{
+        color: #DCDAD8;
+
+    }
+    .footer p{
+        color: #DCDAD8;
+
+    }
+    .footer i{
+        padding-top: 9px;
+        color: #80DFD1;
+        font-size: 20px;
+        margin: 5px;
+    }
+    .footer h1{
+        color: #80DFD1;
+    }
+    #one{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #subs{
+        margin-top: 20px;
+        height: 40px;
+        width: 190px;
+        color: #DCDAD8;
+        border: 1px solid #DCDAD8;
+        align-content: center;
+        font-size: 22px;
+        padding-left: 5px;
+    }
+    #go{
+        margin-top: 20px;
+        margin-left: 5px;
+height:40px ;
+width: 45px;
+color: #DCDAD8;
+background-color:#80DFD1;
+font-weight: bolder;
+
+border: 1px solid #DCDAD8;
+align-content: center;
+font-size: 25px;
+padding-left: 7px;
+    }
+    #go:hover{
+        opacity: 0.8;
+    }
+    .foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
+        background-color:#0F6C73 ;
+        margin-top: 1px;
+    }
+    #fir{
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+    .foot p{
+        color: #DCDAD8;
+    }
+    #fir div{
+        margin: 10px;
+    }
+/*Client slider here*/
+.positive{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px; /* Adjust width to fit 4 cards */
+    overflow: hidden;
+    position: relative;
+}
+.client:hover{
+    
+        transition: transform 0.5s ease,
+         opacity 0.5s ease;
+    
+    
+}
+.one {
+    width:  245px; /* Fixed width for each card */
+    height: 350px;
+    margin: 5px;
+    display: none; /* Hide all cards by default */
+    transition: opacity 0.3s ease;
+    align-content: center;
+    padding: 20px;
+   /* background-image: url("/img11.jpg");
+    background-size: cover;*/
+    border-radius: 10px;
+    border: 2px solid #80DFD1;
+    
+    
+}
+
+
+.cute{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.cute h4{
+    margin-bottom: 10px;
+}
+
+#pora{
+    margin-top: 10px;
+}
+#Ruman{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin-bottom: 15px;
+border-radius: 10px;
+    
+    
+}
+
+
+.one.visible {
+    display: block; /* Show only visible cards */
+    box-shadow: 0px 10px 10px rgba(110, 108, 108, 0.3);
+}
+.one.visible:hover{
+    height: 370px;
+width: 255px;
+}
+.one img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.one i{
+    color: gold;
+    font-size: 12px;
+}
+#clientpre{
+    position: relative;
+    top:230px;
+    right: 25px;
+    font-size: x-large;
+    color: #80DFD1;
+
+}
+#clientfor{
+    position: relative;
+    top:230px;
+    left: 25px;
+    font-size: x-large;
+    color: #80DFD1;
+    
+
+}
+#clientpre:hover{
+    font-size: 30px;
+color:#0F6C73;
+}
+#clientfor:hover{
+    font-size: 30px;
+color:#0F6C73;
+}
+
+.feedback{
+    height: 50px;
+    width: 200px;
+    background-color: #80DFD1;
+    position: relative;
+    left: 43%;
+    margin-bottom: 15px;
+    text-align: center;
+    p{
+        text-align: center;
+        padding: 12px;
+        font-size: 20px;
+        color: #0F6C73;
+        font-weight: bolder;
+    }
+}
+.feedback:hover{
+    opacity: 0.7;
+}
+.azeem h1{
+    color: #0F6C73;
+}
