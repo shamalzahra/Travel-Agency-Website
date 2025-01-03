@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    margin: 2rem;
+}
+
+.navbar {
+    height: 3rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}/*Client slider here*//*Client slider here*/
+.positive{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px; /* Adjust width to fit 4 cards */
+    overflow: hidden;
+    position: relative;
+}
+.client:hover{
+    
+        transition: transform 0.5s ease,
+         opacity 0.5s ease;
+    
+    
+}
+.one {
+    width:  230px; /* Fixed width for each card */
+    height: 250px;
+    margin: 5px;
+    margin-bottom: -140px;
+    display: none; /* Hide all cards by default */
+    transition: opacity 0.3s ease;
+    align-content: center;
+    padding: 20px;
+   /* background-image: url("/img11.jpg");
+    background-size: cover;*/
+    border-radius: 10px;
+    border: 2px solid #80DFD1;
+    
+    
+}
+.one h3{
+    position: relative;
+    top:-110px;
+    color: #0F6C73;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.one p{
+    color: #0F6C73;
+    font-weight: bolder;
+}
+
+.cute{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+
+
+.one.visible {
+    display: block; /* Show only visible cards */
+    box-shadow: 0px 10px 10px rgba(110, 108, 108, 0.3);
+}
+.one.visible:hover{
+    height: 280px;
+width: 240px;
+.more{
+    top:125px;
+}
+}
+.one img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.one i{
+    color: gold;
+    font-size: 12px;
+}
+#clientpre{
+    position: relative;
+    top:230px;
+    right: 25px;
+    font-size: x-large;
+    color: #80DFD1;
+
+}
+#clientfor{
+    position: relative;
+    top:230px;
+    left: 25px;
+    font-size: x-large;
+    color: #80DFD1;
+    
+
+}
+#clientpre:hover{
+    font-size: 30px;
+color:#0F6C73;
+}
+#clientfor:hover{
+    font-size: 30px;
+color:#0F6C73;
+}
+
+.feedback{
+    height: 50px;
+    width: 200px;
+    background-color: #80DFD1;
+    position: relative;
+    left: 43%;
+    margin-bottom: 15px;
+    text-align: center;
+    p{
+        text-align: center;
+        padding: 12px;
+        font-size: 20px;
+        color: #0F6C73;
+        font-weight: bolder;
+    }
+}
+.feedback:hover{
+    opacity: 0.7;
+}
+.azeem h1{
+    color: #0F6C73;
+}
+#cute1{
+    background-image: url("/img14.jpg");
+    background-size: cover;
+}
+#cute2{
+    background-image: url("/England.jpg");
+    background-size: cover;
+}
+.totalcla{
+    background-size: cover;
+}
+.more{
+    height: 30px;
+    width: 120px;
+    position: relative;
+    top:110px;
+    background-color: #80DFD1;
+    text-align: center;
+    padding-top: 10px;
+}
+.total{
+    height: 600px;
+}
+/*product section now*/
+/*product section now*/
+.productsection{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    margin-left: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.car1content{
+    height:350px;
+    margin-top: -20px;
+}
+
+.box{
+    height:350px;
+    width:23%;
+    background-color: #80DFD1;
+    padding:20px 0px 15px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);}
+    
+.box:hover{
+    border: 1px solid #f76d2b;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.om1{
+    height:300px;
+    background-image: url("/italy.jpg");
+    background-size: cover;
+}
+.om2{
+    height:300px;
+padding-left: 20px;
+    background-image:url("/japan.jpg");
+    background-size: cover;
+}
+.om3{
+    height:300px;
+
+    background-image:url("/indonesia.jpg");
+    background-size: cover;
+}
+.om4{
+    height:300px;
+
+    background-image:url("/spain.jpg");
+    background-size: cover;
+}
+.img5{
+    height:300px;
+
+    background-image:url("./pgr.png");
+    background-size: cover;
+}
+
+.img6{
+    height:300px;
+
+    background-image:url("./3rt2.png");
+    background-size: cover;
+}
+.img7{
+    height:300px;
+
+    background-image:url("./shrm.png");
+    background-size: cover;
+}
+.img8{
+    height:300px;
+
+    background-image:url("./porche\ 3d.png");
+    background-size: cover;
+}
+
+
+
+.img1{
+    height:250px;
+    background-image: url("./roll.jfif");
+    background-size: cover;
+}
+.img2{
+    height:250px;
+padding-left: 20px;
+    background-image:url("./Astinmartinlogo.png");
+    background-size: cover;
+}
+.img3{
+    height:250px;
+
+    background-image:url("./jaguarlogo.png");
+    background-size: cover;
+}
+.img4{
+    height:250px;
+
+    background-image:url("./porchelogo.png");
+    background-size: cover;
+}
+.img5{
+    height:250px;
+
+    background-image:url("./bmwlogo.png");
+    background-size: cover;
+}
+
+.img6{
+    height:250px;
+
+    background-image:url("./audilogo.png");
+    background-size: cover;
+}
+.img7{
+    height:250px;
+
+    background-image:url("./mercelogo.png");
+    background-size: cover;
+}
+.img8{
+    height:250px;
+
+    background-image:url("./bentelylogo1.png");
+    background-size: cover;
+}
+.img9{
+    height:250px;
+
+    background-image:url("/ferrarilogo.png");
+    background-size: cover;
+}
+.img10{
+    height:250px;
+
+    background-image:url("./bugattilogo.png");
+    background-size: cover;
+}
+.img11{
+    height:250px;
+
+
+    background-image:url("./teslalogo.png");
+    background-size: cover;
+}
+.img12{
+    height:250px;
+
+    background-image:url("./lambologo.png");
+    background-size: cover;
+}
+.img13{
+    height:200px;
+
+    background-image:url("./mcleranlogo.png");
+    background-size: cover;
+}
+.fazool{
+    text-align: center;
+    height: 85px;
+}

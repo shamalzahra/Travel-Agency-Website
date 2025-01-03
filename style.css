@@ -355,6 +355,7 @@ padding-left: 7px;
     width:  245px; /* Fixed width for each card */
     height: 350px;
     margin: 5px;
+    margin-bottom: 200px;
     display: none; /* Hide all cards by default */
     transition: opacity 0.3s ease;
     align-content: center;
